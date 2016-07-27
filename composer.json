@@ -1,5 +1,5 @@
 {
-    "name": "slynova/laravel-commentable",
+    "name": "harshpatel991/laravel-commentable",
     "description": "Polymorphic threaded comments for Laravel",
     "keywords": ["laravel", "commentable", "comment", "threaded", "nested set"],
     "license": "MIT",
