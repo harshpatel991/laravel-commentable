@@ -1,4 +1,4 @@
-<?php namespace Slynova\Commentable\Traits;
+<?php namespace harshpatel991\Commentable\Traits;
 
 /**
  * Part of the Laravel-Commentable package.
@@ -17,7 +17,7 @@
  * @copyright  (c) Slynova
  */
 
-use Slynova\Commentable\Models\Comment;
+use harshpatel991\Commentable\Models\Comment;
 
 trait Commentable
 {
