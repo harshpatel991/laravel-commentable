@@ -18,13 +18,13 @@ As a temporary work around, if your project can't resolve the slynova/laravel-co
     ```
 
   3. Change namespace of the provider
-    ```shell
+    ```php
           harshpatel991\Commentable\ServiceProvider::class // add this
           Slynova\Commentable\ServiceProvider::class // remove this
     ```
 
   4. Rename import namespaces from slynova to harshpatel991
-      ```shell
+      ```php
             use harshpatel991\Commentable\Models\Comment; // add this
             use Slynova\Commentable\Models\Comment; // remove this
       ```
