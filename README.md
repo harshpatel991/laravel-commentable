@@ -1,4 +1,37 @@
-![Slynova](https://cloud.githubusercontent.com/assets/2793951/8206037/35841f80-14f6-11e5-8538-b378cd632d28.png)
+This is a a fork of v1.0.1. slynova/laravel-commentable since the repo owner has removed it.
+
+As a temporary work around, if your project can't resolve the slynova/laravel-commentable dependency and you are using v1.0.1, you can switch to using this repo as the source:
+
+  1. Add this to your composer.json:
+    ```shell
+      "repositories": [
+          {
+              "type": "vcs",
+              "url": "https://github.com/harshpatel991/laravel-commentable"
+          }
+      ]
+      ```
+
+  2. Change the dependency to point to this repo:
+    ```shell
+          "harshpatel991/laravel-commentable": "dev-master"
+    ```
+
+  3. Change namespace of the provider
+    ```shell
+          harshpatel991\Commentable\ServiceProvider::class // add this
+          Slynova\Commentable\ServiceProvider::class // remove this
+    ```
+
+  4. Rename import namespaces from slynova to harshpatel991
+      ```shell
+            use harshpatel991\Commentable\Models\Comment; // add this
+            use Slynova\Commentable\Models\Comment; // remove this
+      ```
+
+  5. Run composer install on your local machine
+
+  6. Run composer update on your deployment server
 
 # Laravel-Commentable
 
