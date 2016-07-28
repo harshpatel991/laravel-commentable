@@ -29,9 +29,9 @@ As a temporary work around, if your project can't resolve the slynova/laravel-co
             use Slynova\Commentable\Models\Comment; // remove this
       ```
 
-  5. Run composer install on your local machine
+  5. Run composer update on your local machine
 
-  6. Run composer update on your deployment server
+  6. Run composer install on your deployment server
 
 # Laravel-Commentable
 
