@@ -3,31 +3,31 @@ This is a a fork of v1.0.1. slynova/laravel-commentable since the repo owner has
 As a temporary work around, if your project can't resolve the slynova/laravel-commentable dependency and you are using v1.0.1, you can switch to using this repo as the source:
 
   1. Add this to your composer.json:
-    ```shell
-      "repositories": [
-          {
-              "type": "vcs",
-              "url": "https://github.com/harshpatel991/laravel-commentable"
-          }
-      ]
-      ```
+```shell
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/harshpatel991/laravel-commentable"
+    }
+]
+```
 
   2. Change the dependency to point to this repo:
-    ```shell
-          "harshpatel991/laravel-commentable": "dev-master"
-    ```
+```shell
+"harshpatel991/laravel-commentable": "dev-master"
+```
 
   3. Change namespace of the provider
-    ```php
-          harshpatel991\Commentable\ServiceProvider::class // add this
-          Slynova\Commentable\ServiceProvider::class // remove this
-    ```
+```php
+harshpatel991\Commentable\ServiceProvider::class // add this
+Slynova\Commentable\ServiceProvider::class // remove this
+```
 
   4. Rename import namespaces from slynova to harshpatel991
-      ```php
-            use harshpatel991\Commentable\Models\Comment; // add this
-            use Slynova\Commentable\Models\Comment; // remove this
-      ```
+```php
+use harshpatel991\Commentable\Models\Comment; // add this
+use Slynova\Commentable\Models\Comment; // remove this
+```
 
   5. Run composer update on your local machine
 
